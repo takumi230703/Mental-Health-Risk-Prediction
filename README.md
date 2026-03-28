@@ -11,21 +11,21 @@ https://mental-health-risk-prediction-1.onrender.com/
 
 ## Features
 
-• Predict mental health risk level (Low / Moderate / High)
-• Interactive web interface built with React
-• FastAPI backend for ML inference
-• Machine learning model trained using scikit-learn
-• End-to-end deployment on cloud using Render
+**• Predict mental health risk level (Low / Moderate / High)**<br>
+**• Interactive web interface built with React**<br>
+**• FastAPI backend for ML inference**<br>
+**• Machine learning model trained using scikit-learn**<br>
+**• End-to-end deployment on cloud using Render**
 
 ## User inputs include:
 
-Age
-Gender
-Marital Status
-Education Level
-Sleep Hours
-Job Satisfaction Score
-Financial Stress Level
+-**Age**<br>
+-**Gender**<br>
+-**Marital Status**<br>
+-**Education Level**<br>
+-**Sleep Hours**<br>
+-**Job Satisfaction Score**<br>
+-**Financial Stress Level**
 
 ## Tech Stack
 -**Frontend:** React, JavaScript, CSS
