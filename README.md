@@ -1,17 +1,15 @@
 # Mental-Health-Risk-Prediction
 
-Mental Health Risk Predictor
 
 A full-stack machine learning web application that predicts a user's mental health risk level based on lifestyle and demographic factors.
 
 The system consists of a React frontend, a FastAPI backend, and a machine learning model trained with scikit-learn.
 
-Live Demo
 
-URL
+## URL
 https://mental-health-risk-prediction-1.onrender.com/
 
-Features
+## Features
 
 • Predict mental health risk level (Low / Moderate / High)
 • Interactive web interface built with React
@@ -19,7 +17,7 @@ Features
 • Machine learning model trained using scikit-learn
 • End-to-end deployment on cloud using Render
 
-User inputs include:
+## User inputs include:
 
 Age
 Gender
@@ -28,21 +26,13 @@ Education Level
 Sleep Hours
 Job Satisfaction Score
 Financial Stress Level
-Tech Stack
 
-Frontend
-React
-JavaScript
-CSS
+## Tech Stack
+-**Frontend:** React, JavaScript, CSS
 
-Backend
-FastAPI
-Python
+-**Backend:** FastAPI
 
-Machine Learning
-scikit-learn
-pandas
-NumPy
+-**ML:** scikit-learn, pandas, NumPy
 
-Deployment
-Render
+**Deployment:** Render
+
