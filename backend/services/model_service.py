@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 
 
-data = joblib.load("models/mental_health_model.pkl")
+data = joblib.load("notebooks/mental_health_model.pkl")
 model = data["model"]
 features = data["features"]
 
