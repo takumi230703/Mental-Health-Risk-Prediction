@@ -34,5 +34,5 @@ Financial Stress Level
 
 -**ML:** scikit-learn, pandas, NumPy
 
-**Deployment:** Render
+-**Deployment:** Render
 
