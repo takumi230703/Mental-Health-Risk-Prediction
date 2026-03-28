@@ -33,11 +33,17 @@ function App() {
     const data = await response.json();
     setPrediction(data.prediction);
   };
+  const getRiskClass = () => {
+    if (prediction === "Low Mental Health Risk") return "result result-low";
+    if (prediction === "Moderate Mental Health Risk") return "result result-medium";
+    if (prediction === "High Mental Health Risk") return "result result-high";
+    return "result";
+  };
 
   return (
     <div className="container">
 
-      <h1>Mental Health Risk Predictor</h1>
+      <h1>Mental Health Risk Assessment</h1>
 
       <div className="grid">
 
@@ -96,7 +102,7 @@ function App() {
       </button>
 
       {prediction && (
-        <div className="result">
+        <div className={getRiskClass()}>
           Prediction: {prediction}
         </div>
       )}
