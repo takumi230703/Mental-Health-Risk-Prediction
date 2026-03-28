@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi import APIRouter
-import joblib
 from services.model_service import predict_fn
 
 
@@ -12,8 +11,8 @@ class PredictRequest(BaseModel):
     marital_status: str
     education_level: str
     sleep_hours: float
-    job_satisfaction_score: float
-    financial_stress_level: float
+    job_satisfaction_score: int
+    financial_stress_level: int
 
 router = APIRouter()
 
@@ -23,7 +22,13 @@ def predict(data: PredictRequest):
     input_data = data.dict()
     
     
-    result = predict_fn(input_data)
+    prediction = predict_fn(input_data)
     
-    return result
+    label_map = {
+        0: "Low Mental Health Risk",
+        1: "Moderate Mental Health Risk",
+        2: "High Mental Health Risk"
+    }
     
+    return {"prediction": label_map[prediction]}
+

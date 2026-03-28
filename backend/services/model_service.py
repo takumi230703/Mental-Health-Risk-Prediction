@@ -12,7 +12,8 @@ def predict_fn(input_data):
     df = df.reindex(columns=features, fill_value=0)
     
     pred = model.predict(df)
-    return {"prediction": int(pred[0])}
+    return int(pred[0])
+
 
 
 
